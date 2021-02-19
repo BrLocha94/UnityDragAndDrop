@@ -272,6 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 155438443}
   - component: {fileID: 155438445}
+  - component: {fileID: 155438446}
   - component: {fileID: 155438444}
   m_Layer: 5
   m_Name: Gear
@@ -336,6 +337,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155438442}
   m_CullTransparentMesh: 0
+--- !u!114 &155438446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155438442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearType: 0
+  gearColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &457239712
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529187385}
   - component: {fileID: 529187387}
+  - component: {fileID: 529187388}
   - component: {fileID: 529187386}
   m_Layer: 5
   m_Name: Gear
@@ -656,6 +672,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529187384}
   m_CullTransparentMesh: 0
+--- !u!114 &529187388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529187384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearType: 0
+  gearColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &572931864
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702705370}
   - component: {fileID: 702705372}
+  - component: {fileID: 702705373}
   - component: {fileID: 702705371}
   m_Layer: 5
   m_Name: Gear
@@ -996,6 +1027,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702705369}
   m_CullTransparentMesh: 0
+--- !u!114 &702705373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702705369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearType: 0
+  gearColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &776793993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +2051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770664875}
   - component: {fileID: 1770664877}
+  - component: {fileID: 1770664878}
   - component: {fileID: 1770664876}
   m_Layer: 5
   m_Name: Gear
@@ -2070,6 +2116,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770664874}
   m_CullTransparentMesh: 0
+--- !u!114 &1770664878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770664874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearType: 0
+  gearColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1797470302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,6 +2748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085494412}
   - component: {fileID: 2085494414}
+  - component: {fileID: 2085494415}
   - component: {fileID: 2085494413}
   m_Layer: 5
   m_Name: Gear
@@ -2752,3 +2813,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085494411}
   m_CullTransparentMesh: 0
+--- !u!114 &2085494415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085494411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearType: 0
+  gearColor: {r: 1, g: 1, b: 1, a: 1}

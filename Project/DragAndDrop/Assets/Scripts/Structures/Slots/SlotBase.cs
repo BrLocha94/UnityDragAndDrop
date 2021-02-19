@@ -7,8 +7,7 @@ namespace Project.Main
     [RequireComponent(typeof(Collider2D))]
     public abstract class SlotBase : MonoBehaviour
     {
-
-        private Collider2D colliderMain;
+        protected Collider2D colliderMain;
         void Awake()
         {
             colliderMain = GetComponent<Collider2D>();
@@ -32,23 +31,6 @@ namespace Project.Main
             {
                 ExecuteOnTriggerExit2DTrackeble();
             }
-        }
-
-        #endregion
-
-        #region Click Handlers
-
-        protected virtual void InitializeOnMouseDown() { }
-        protected virtual void InitializeOnMouseUp() { }
-
-        void OnMouseDown()
-        {
-            InitializeOnMouseDown();
-        }
-
-        void OnMouseUp()
-        {
-            InitializeOnMouseUp();
         }
 
         #endregion
