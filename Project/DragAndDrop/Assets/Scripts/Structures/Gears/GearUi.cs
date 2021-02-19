@@ -16,5 +16,13 @@ namespace Project.Main
 
             image = GetComponent<Image>();
         }
+
+        public override void ToogleGear(bool value)
+        {
+            base.ToogleGear(value);
+
+            if (value)
+                image.color = gear.gearColor;
+        }
     }
 }

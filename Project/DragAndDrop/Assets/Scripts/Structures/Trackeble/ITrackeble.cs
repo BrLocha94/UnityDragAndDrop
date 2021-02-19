@@ -6,7 +6,8 @@ namespace Project.Main
 {
     public interface ITrackeble
     {
-        void ExecuteOnEnter();
-        void ExcecuteOnExit();
+        void ExecuteOnEnter(SlotBase slot);
+        void ExcecuteOnExit(SlotBase slot);
+        void StartTracking(SlotBase slot);
     }
 }

@@ -9,14 +9,28 @@ namespace Project.Main
         [SerializeField]
         private GearAnimated gear;
 
-        protected override void ExecuteOnTriggerEnter2DTrackeble()
+        public override void AssignGear(Gear newGear)
         {
-            base.ExecuteOnTriggerEnter2DTrackeble();
+            gear.SetGearValues(newGear.gearType, newGear.gearColor);
+
+            gear.ToogleGear(true);
         }
 
-        protected override void ExecuteOnTriggerExit2DTrackeble()
+        public override void RemoveGear()
         {
-            base.ExecuteOnTriggerExit2DTrackeble();
+            gear.ToogleGear(false);
+        }
+
+        public override Gear GetGear() => gear.GetGear();
+
+        public override void ExcecuteOnMouseDown()
+        {
+            GameController.instance.StartTracking(this);
+        }
+
+        private void OnMouseDown()
+        {
+            ExcecuteOnMouseDown();
         }
     }
 }

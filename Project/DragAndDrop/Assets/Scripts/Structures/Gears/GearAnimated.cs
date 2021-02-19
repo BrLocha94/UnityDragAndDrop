@@ -18,5 +18,13 @@ namespace Project.Main
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
         }
+
+        public override void ToogleGear(bool value)
+        {
+            base.ToogleGear(value);
+
+            if (value)
+                spriteRenderer.color = gear.gearColor;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,22 +9,39 @@ namespace Project.Main
     public abstract class GearBase : MonoBehaviour
     {
         [SerializeField]
-        protected GearType gearType = GearType.Null;
-        [SerializeField]
-        protected Color gearColor = Color.white;
+        protected Gear gear;
 
         protected virtual void InitializeOnAwake() { }
 
         void Awake()
         {
+            gear = new Gear();
+
             InitializeOnAwake();    
         }
 
-        public void SetGear(GearType gearType, Color gearColor)
+        public void SetGearValues(GearType gearType, Color gearColor)
         {
-            this.gearType = gearType;
-            this.gearColor = gearColor;
+            gear.gearType = gearType;
+            gear.gearColor = gearColor;
         }
+
+        public Gear GetGear()
+        {
+            return gear;
+        }
+
+        public virtual void ToogleGear(bool value)
+        {
+            gameObject.SetActive(value);
+        }
+    }
+
+    [Serializable]
+    public class Gear
+    {
+        public GearType gearType = GearType.Null;
+        public Color gearColor = Color.white;
     }
 
     public enum GearType
