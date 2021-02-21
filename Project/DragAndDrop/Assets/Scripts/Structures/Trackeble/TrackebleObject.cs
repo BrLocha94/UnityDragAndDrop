@@ -6,6 +6,7 @@ namespace Project.Main
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Collider2D))]
+    [RequireComponent(typeof(SpriteRenderer))]
     public class TrackebleObject : MonoBehaviour , ITrackeble
     {
         SlotBase slotOriginal = null;
@@ -13,9 +14,11 @@ namespace Project.Main
 
         bool isTracking = false;
 
+        SpriteRenderer spriteRenderer;
         Vector3 initialPosition;
         void Awake()
         {
+            spriteRenderer = GetComponent<SpriteRenderer>();
             initialPosition = transform.position;
         }
 
@@ -63,6 +66,8 @@ namespace Project.Main
 
         public void StartTracking(SlotBase slot)
         {
+            spriteRenderer.color = slot.GetGear().gearColor;
+
             slotOriginal = slot;
             slotCurrent = null;
 
@@ -71,10 +76,16 @@ namespace Project.Main
 
         void FinishTracking()
         {
-            if(slotOriginal && slotCurrent)
+            if (slotOriginal && slotCurrent)
             {
-                slotCurrent.AssignGear(slotOriginal.GetGear());
-                slotOriginal.RemoveGear();
+                if (slotCurrent.IsGearActive())
+                    Debug.Log("Current slot already has a gear, cant move to there");
+
+                else
+                {
+                    slotCurrent.AssignGear(slotOriginal.GetGear());
+                    slotOriginal.RemoveGear();
+                }
             }
 
             isTracking = false;

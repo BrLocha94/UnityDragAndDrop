@@ -34,7 +34,7 @@ namespace Project.Main
         {
             currentGameState = newGameState;
 
-            if (currentGameState == GameStates.Starting)
+            if (currentGameState == GameStates.Starting || currentGameState == GameStates.Restarting)
                 StartCoroutine(StartGameRoutine());
 
             onGameStateChange?.Invoke(currentGameState);
@@ -51,6 +51,7 @@ namespace Project.Main
 
         public void StartTracking(SlotBase slot)
         {
+
             if (currentGameState != GameStates.Running) return;
 
             onStartTracking?.Invoke(slot);

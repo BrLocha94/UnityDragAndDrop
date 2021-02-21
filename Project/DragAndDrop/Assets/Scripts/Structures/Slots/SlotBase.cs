@@ -28,8 +28,6 @@ namespace Project.Main
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Debug.Log("Collision enter");
-
             if (collision.tag.Equals("Trackeble"))
             {
                 ITrackeble target = collision.GetComponent<ITrackeble>();
@@ -40,8 +38,6 @@ namespace Project.Main
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            Debug.Log("Collision exit");
-
             if (collision.tag.Equals("Trackeble"))
             {
                 ITrackeble target = collision.GetComponent<ITrackeble>();

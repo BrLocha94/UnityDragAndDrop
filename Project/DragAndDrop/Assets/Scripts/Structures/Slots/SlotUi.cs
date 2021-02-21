@@ -29,7 +29,8 @@ namespace Project.Main
 
         public override void ExcecuteOnMouseDown()
         {
-            GameController.instance.StartTracking(this);
+            if(gear.isGearActive)
+                GameController.instance.StartTracking(this);
         }
 
         protected override void ExecuteOnTriggerEnter2DTrackeble(ITrackeble target)
@@ -39,8 +40,6 @@ namespace Project.Main
                 Debug.Log("There is no gear assigned to this slot");
                 return;
             }
-
-            if (!gear.isGearActive) return; 
 
             base.ExecuteOnTriggerEnter2DTrackeble(target);
         }
@@ -52,8 +51,6 @@ namespace Project.Main
                 Debug.Log("There is no gear assigned to this slot");
                 return;
             }
-
-            if (!gear.isGearActive) return;
 
             base.ExecuteOnTriggerExit2DTrackeble(target);
         }
