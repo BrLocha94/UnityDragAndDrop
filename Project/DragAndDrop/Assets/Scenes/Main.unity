@@ -735,7 +735,7 @@ Animator:
   m_GameObject: {fileID: 500606261}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 9a3f69b807c69bc40bc28b4d993fcc35, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -759,6 +759,7 @@ MonoBehaviour:
   gear:
     gearType: 0
     gearColor: {r: 1, g: 1, b: 1, a: 1}
+  animationTime: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1966,7 @@ Animator:
   m_GameObject: {fileID: 902821221}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: e956a724a45a85e469739de750a9919b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1989,6 +1990,7 @@ MonoBehaviour:
   gear:
     gearType: 0
     gearColor: {r: 1, g: 1, b: 1, a: 1}
+  animationTime: 1
 --- !u!1 &937065878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,7 +2385,7 @@ Animator:
   m_GameObject: {fileID: 1163276944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 9a3f69b807c69bc40bc28b4d993fcc35, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2407,6 +2409,7 @@ MonoBehaviour:
   gear:
     gearType: 0
     gearColor: {r: 1, g: 1, b: 1, a: 1}
+  animationTime: 1
 --- !u!1 &1361421573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,7 +2761,7 @@ Animator:
   m_GameObject: {fileID: 1653427858}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 9a3f69b807c69bc40bc28b4d993fcc35, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2782,6 +2785,7 @@ MonoBehaviour:
   gear:
     gearType: 0
     gearColor: {r: 1, g: 1, b: 1, a: 1}
+  animationTime: 1
 --- !u!1 &1770664874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,7 +3425,7 @@ Animator:
   m_GameObject: {fileID: 1967103840}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: e956a724a45a85e469739de750a9919b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3445,6 +3449,7 @@ MonoBehaviour:
   gear:
     gearType: 0
     gearColor: {r: 1, g: 1, b: 1, a: 1}
+  animationTime: 1
 --- !u!1 &1998089163
 GameObject:
   m_ObjectHideFlags: 0

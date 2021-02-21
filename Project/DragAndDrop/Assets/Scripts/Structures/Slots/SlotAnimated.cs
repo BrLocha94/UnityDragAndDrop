@@ -28,6 +28,12 @@ namespace Project.Main
         public override Gear GetGear() => gear.GetGear();
         public override bool IsGearActive() => gear.isGearActive;
 
+        public override void TriggerSpecialBehaviour(bool trigger)
+        {
+            base.TriggerSpecialBehaviour(trigger);
+            gear.TriggerSpecialBehaviour(trigger);
+        }
+
         public override void ExcecuteOnMouseDown()
         {
             if (gear.isGearActive)

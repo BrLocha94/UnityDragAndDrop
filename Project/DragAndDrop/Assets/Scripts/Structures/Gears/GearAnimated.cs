@@ -8,6 +8,11 @@ namespace Project.Main
     [RequireComponent(typeof(Animator))]
     public class GearAnimated : GearBase
     {
+        [Header("Animation time base in seconds")]
+        [SerializeField]
+        [Range(0.1f, 1f)]
+        private float animationTime;
+
         SpriteRenderer spriteRenderer;
         Animator animator;
 
@@ -25,6 +30,14 @@ namespace Project.Main
 
             if (value)
                 spriteRenderer.color = gear.gearColor;
+        }
+
+        public virtual void TriggerSpecialBehaviour(bool trigger)
+        {
+            if (trigger == true)
+                animator.speed = animationTime;
+            else
+                animator.speed = 0f;
         }
     }
 }
