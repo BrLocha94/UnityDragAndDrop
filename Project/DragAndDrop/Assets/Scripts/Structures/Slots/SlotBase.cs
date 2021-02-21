@@ -4,12 +4,22 @@ using UnityEngine;
 
 namespace Project.Main
 {
+    public delegate void OnGearAssign();
+    public delegate void OnGearRevome();
+
     [RequireComponent(typeof(Collider2D))]
     public abstract class SlotBase : MonoBehaviour
     {
-        public abstract void AssignGear(Gear newGear);
-        public abstract void RemoveGear();
+        public event OnGearAssign onGearAssign;
+        public event OnGearRevome onGearRemove;
+
+        public virtual void AssignGear(Gear newGear) { onGearAssign?.Invoke(); }
+        public virtual void RemoveGear() { onGearRemove?.Invoke(); }
+        public virtual void TriggerSpecialBehaviour(bool trigger) { }
+
         public abstract Gear GetGear();
+        public abstract void ExcecuteOnMouseDown();
+        public abstract bool IsGearActive();
 
         #region Collision Handlers
 
@@ -41,8 +51,5 @@ namespace Project.Main
         }
 
         #endregion
-
-        public abstract void ExcecuteOnMouseDown();
-
     }
 }

@@ -8,14 +8,16 @@ namespace Project.Main
 {
     public abstract class GearBase : MonoBehaviour
     {
+        public bool isGearActive { get; private set; }
+
         [SerializeField]
-        protected Gear gear;
+        protected Gear gear = new Gear();
 
         protected virtual void InitializeOnAwake() { }
 
         void Awake()
         {
-            gear = new Gear();
+            isGearActive = true;
 
             InitializeOnAwake();    
         }
@@ -33,6 +35,7 @@ namespace Project.Main
 
         public virtual void ToogleGear(bool value)
         {
+            isGearActive = value;
             gameObject.SetActive(value);
         }
     }
@@ -51,6 +54,10 @@ namespace Project.Main
         Cyan,
         Yellow,
         Green,
-        Blue
+        Blue,
+        Black,
+        Orange,
+        Purple,
+        Red
     }
 }

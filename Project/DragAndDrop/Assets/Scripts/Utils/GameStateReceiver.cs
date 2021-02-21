@@ -22,7 +22,7 @@ namespace Project.Main
 
         void Start()
         {
-            currentGameState = GameController.instance.currentGameState;
+            OnGameStateChange(GameController.instance.currentGameState);
 
             ExecuteOnStart();
         }
