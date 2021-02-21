@@ -51,10 +51,9 @@ namespace Project.Main
 
         public void StartTracking(SlotBase slot)
         {
-
-            if (currentGameState != GameStates.Running) return;
-
-            onStartTracking?.Invoke(slot);
+            //Tracking effect should only be possible on game running or game clear
+            if (currentGameState == GameStates.Running || currentGameState == GameStates.GameClear)
+                onStartTracking?.Invoke(slot);
         }
 
         public List<Gear> GetNewGears()

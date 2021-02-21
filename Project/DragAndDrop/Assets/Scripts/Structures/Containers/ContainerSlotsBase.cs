@@ -23,6 +23,7 @@ namespace Project.Main
             for(int i = 0; i < listSlots.Length; i++)
             {
                 listSlots[i].onGearAssign += onGearAssign;
+                listSlots[i].onGearRemove += OnGearRemove;
             }
         }
 
@@ -32,7 +33,8 @@ namespace Project.Main
 
             for (int i = 0; i < listSlots.Length; i++)
             {
-                listSlots[i].onGearRemove += OnGearRemove;
+                listSlots[i].onGearRemove -= onGearAssign;
+                listSlots[i].onGearRemove -= OnGearRemove;
             }
         }
 

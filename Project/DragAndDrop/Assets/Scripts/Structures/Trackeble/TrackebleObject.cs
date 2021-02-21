@@ -69,6 +69,7 @@ namespace Project.Main
             spriteRenderer.color = slot.GetGear().gearColor;
 
             slotOriginal = slot;
+            slotOriginal.RemoveGear();
             slotCurrent = null;
 
             isTracking = true;
@@ -76,7 +77,7 @@ namespace Project.Main
 
         void FinishTracking()
         {
-            if (slotOriginal && slotCurrent)
+            if (slotCurrent)
             {
                 if (slotCurrent.IsGearActive())
                     Debug.Log("Current slot already has a gear, cant move to there");
@@ -87,6 +88,8 @@ namespace Project.Main
                     slotOriginal.RemoveGear();
                 }
             }
+            else
+                slotOriginal.AssignGear(slotOriginal.GetGear());
 
             isTracking = false;
             transform.position = initialPosition;
