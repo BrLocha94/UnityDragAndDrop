@@ -56,18 +56,18 @@ namespace Project.Main
                 onStartTracking?.Invoke(slot);
         }
 
-        public List<Gear> GetNewGears()
+        public List<GearSerialized> GetNewGears()
         {
             //Return a clean list to avoid errors
             if(listGears.Count == 0)
             {
                 Debug.Log("There is no gear assigned to this game");
 
-                List<Gear> cleanList = new List<Gear>();
+                List<GearSerialized> cleanList = new List<GearSerialized>();
 
                 for(int i = 0; i < gearsPerRound; i++)
                 {
-                    cleanList.Add(new Gear());
+                    cleanList.Add(new GearSerialized());
                 }
 
                 return cleanList;
@@ -78,21 +78,28 @@ namespace Project.Main
             {
                 Debug.Log("There are no minimum gears assigned");
 
-                for (int i = 0; i < gearsPerRound; i++)
+                List<GearSerialized> cleanList = new List<GearSerialized>();
+
+                for(int i = 0; i < listGears.Count; i++)
                 {
-                    listGears.Add(new Gear());
+                    cleanList.Add(new GearSerialized(listGears[i]));
                 }
 
-                return Shuffle(listGears);
+                for (int i = cleanList.Count - 1; i < gearsPerRound; i++)
+                {
+                    cleanList.Add(new GearSerialized());
+                }
+
+                return Shuffle(cleanList);
             }
 
             //Shuffle the list then pick minimun amount to return
             List<Gear> listShuffled = Shuffle(listGears);
-            List<Gear> newList = new List<Gear>();
+            List<GearSerialized> newList = new List<GearSerialized>();
 
             for(int i = 0; i < gearsPerRound; i++)
             {
-                newList.Add(listShuffled[i]);
+                newList.Add(new GearSerialized(listShuffled[i]));
             }
 
             return newList;

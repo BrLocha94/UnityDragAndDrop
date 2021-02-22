@@ -419,9 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
 --- !u!1 &382432755
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,9 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b825f285a4324db7ac8ede75e71bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
   animationTime: 1
 --- !u!1 &519420028
 GameObject:
@@ -1019,9 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
 --- !u!1 &535898969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,24 +1047,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gearsPerRound: 5
   listGears:
-  - gearType: 1
-    gearColor: {r: 0.8679245, g: 0.18422928, b: 0.80931455, a: 1}
-  - gearType: 2
-    gearColor: {r: 0, g: 0.887702, b: 1, a: 1}
-  - gearType: 3
-    gearColor: {r: 0.9811321, g: 0.9126855, b: 0.023139905, a: 1}
-  - gearType: 4
-    gearColor: {r: 0.12583809, g: 0.9245283, b: 0.10902455, a: 1}
-  - gearType: 5
-    gearColor: {r: 0.08495018, g: 0.267055, b: 0.7830189, a: 1}
-  - gearType: 6
-    gearColor: {r: 0, g: 0, b: 0, a: 1}
-  - gearType: 7
-    gearColor: {r: 1, g: 0.4452121, b: 0, a: 1}
-  - gearType: 8
-    gearColor: {r: 0.6770709, g: 0.09927912, b: 0.9150943, a: 1}
-  - gearType: 9
-    gearColor: {r: 1, g: 0.071358845, b: 0, a: 1}
+  - {fileID: 11400000, guid: 78ed38254bc5c2240b6d844f87276655, type: 2}
+  - {fileID: 11400000, guid: f10d7b04547220f4d86be22756bc5538, type: 2}
+  - {fileID: 11400000, guid: f746000d3aa94d0469417ceaa3afc55a, type: 2}
+  - {fileID: 11400000, guid: c1c96b506df033948b8eee4619b5462f, type: 2}
+  - {fileID: 11400000, guid: b751704bb6052f243babeeda8a8ae015, type: 2}
+  - {fileID: 11400000, guid: 285cb7bcc7b1fd444b5816ea849e96c9, type: 2}
+  - {fileID: 11400000, guid: de297e017b93f7a4094beec10e581d24, type: 2}
+  - {fileID: 11400000, guid: a64bb2eae3e580845900e528a5db88ca, type: 2}
+  - {fileID: 11400000, guid: cf0df8bd1e302434db0dd743a25e6c60, type: 2}
 --- !u!4 &535898971
 Transform:
   m_ObjectHideFlags: 0
@@ -1438,9 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
 --- !u!1 &776793993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,9 +2060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b825f285a4324db7ac8ede75e71bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
   animationTime: 1
 --- !u!1 &937065878
 GameObject:
@@ -2499,9 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b825f285a4324db7ac8ede75e71bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
   animationTime: 1
 --- !u!1 &1361421573
 GameObject:
@@ -2875,9 +2854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b825f285a4324db7ac8ede75e71bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
   animationTime: 1
 --- !u!1 &1770664874
 GameObject:
@@ -2966,9 +2943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
 --- !u!1 &1797470302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3539,9 +3514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b825f285a4324db7ac8ede75e71bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
   animationTime: 1
 --- !u!1 &1998089163
 GameObject:
@@ -3864,9 +3837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563df0854674e874eae13d48f000e36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gear:
-    gearType: 0
-    gearColor: {r: 1, g: 1, b: 1, a: 1}
+  gear: {fileID: 11400000, guid: ff22f2bec5fdf06448f4ee62fc67c3ef, type: 2}
 --- !u!1001 &2043995241549454584
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,11 +13,11 @@ namespace Project.Main
         public event OnGearAssign onGearAssign;
         public event OnGearRevome onGearRemove;
 
-        public virtual void AssignGear(Gear newGear) { onGearAssign?.Invoke(); }
+        public virtual void AssignGear(GearSerialized newGear) { onGearAssign?.Invoke(); }
         public virtual void RemoveGear() { onGearRemove?.Invoke(); }
         public virtual void TriggerSpecialBehaviour(bool trigger) { }
 
-        public abstract Gear GetGear();
+        public abstract GearSerialized GetGear();
         public abstract void ExcecuteOnMouseDown();
         public abstract bool IsGearActive();
 

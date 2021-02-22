@@ -12,7 +12,7 @@ namespace Project.Main
 
             if (currentGameState == GameStates.Starting || currentGameState == GameStates.Restarting)
             {
-                List<Gear> listGears = GameController.instance.GetNewGears();
+                List<GearSerialized> listGears = GameController.instance.GetNewGears();
 
                 if (listGears.Count != listSlots.Length)
                 {

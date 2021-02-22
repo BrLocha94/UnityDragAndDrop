@@ -9,7 +9,7 @@ namespace Project.Main
         [SerializeField]
         private GearUi gear;
 
-        public override void AssignGear(Gear newGear)
+        public override void AssignGear(GearSerialized newGear)
         {
             gear.SetGearValues(newGear.gearType, newGear.gearColor);
             gear.ToogleGear(true);
@@ -24,7 +24,7 @@ namespace Project.Main
             base.RemoveGear();
         }
 
-        public override Gear GetGear() => gear.GetGear();
+        public override GearSerialized GetGear() => gear.GetGear();
         public override bool IsGearActive() => gear.isGearActive;
 
         public override void ExcecuteOnMouseDown()

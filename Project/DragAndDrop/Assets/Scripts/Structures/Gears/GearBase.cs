@@ -11,7 +11,7 @@ namespace Project.Main
         public bool isGearActive { get; private set; }
 
         [SerializeField]
-        protected Gear gear = new Gear();
+        protected GearSerialized gear;
 
         protected virtual void InitializeOnAwake() { }
 
@@ -28,7 +28,7 @@ namespace Project.Main
             gear.gearColor = gearColor;
         }
 
-        public Gear GetGear()
+        public GearSerialized GetGear()
         {
             return gear;
         }
@@ -38,26 +38,5 @@ namespace Project.Main
             isGearActive = value;
             gameObject.SetActive(value);
         }
-    }
-
-    [Serializable]
-    public class Gear
-    {
-        public GearType gearType = GearType.Null;
-        public Color gearColor = Color.white;
-    }
-
-    public enum GearType
-    {
-        Null,
-        Pink,
-        Cyan,
-        Yellow,
-        Green,
-        Blue,
-        Black,
-        Orange,
-        Purple,
-        Red
     }
 }
